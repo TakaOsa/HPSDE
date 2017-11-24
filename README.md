@@ -4,7 +4,7 @@ This is the matlab code for Hierarchical Policy Search via Return-Weighted Densi
 
 
 
-##Dependencies:
+## Dependencies:
 
 minConf by Mark Schmidt
 
@@ -23,7 +23,7 @@ http://www.gaussianprocess.org/gpml/code/matlab/doc/
 Download the zip file and locate the folder "gpml-matlab" in the same folder as this readme.md
 
 
-##
+## 
 How to run:
 
 To see the toy tasks in the paper, run
