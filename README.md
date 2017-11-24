@@ -3,9 +3,11 @@
 This is the matlab code for Hierarchical Policy Search via Return-Weighted Density Estimation (HPSDE).
 
 
+
 ##Dependencies:
 
 minConf by Mark Schmidt
+
 https://www.cs.ubc.ca/~schmidtm/Software/minConf.html
 
 

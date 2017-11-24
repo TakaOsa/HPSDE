@@ -14,9 +14,9 @@ addpath('rewardFunc');
 
 
 %== comment out one of the reward funtion types ==
-%RewardType = '_RewardDouble';
+RewardType = '_RewardDouble';
 %RewardType = '_DoubleCourve';
-RewardType = '_RewardTripleSplit';
+%RewardType = '_RewardTripleSplit';
 
 %== comment out one of the option policy update types ==
 PolicyUpdate = 'RWR';
