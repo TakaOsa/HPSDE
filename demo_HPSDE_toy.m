@@ -23,8 +23,8 @@ PolicyUpdate = 'RWR';
 %PolicyUpdate = 'REPS';
 
 %== comment out one of the gating policy types ==
-%GatePolicyType = 'gp';
-GatePolicyType = 'soft';
+GatePolicyType = 'gp';
+%GatePolicyType = 'soft';
 
 %== set the feature type ==
 %0: linear feature, 1: exponential feature. 
@@ -128,10 +128,10 @@ for i = 1:clusteringNum
                 hold on;
                 axis( [0 2 0 Amax] );  view(2);
                 axis off;
-                a = linspace(0, 1,  ClusterSeedsNum);
-                for o = 1:ClusterSeedsNum
+                a = linspace(0, 1,  policyNum);
+                for o = 1:policyNum
                     height = 2 * ones( size(hrl.PolicySet( o, 1 ).ActionSet) );
-                    color = red * 0.5 * ( sin( (o-1)/(ClusterSeedsNum - 1) *pi ) + 1 ) + green * 0.5 * ( sin( (o-1)/(ClusterSeedsNum - 1) *pi + 2/3*pi ) + 1)  +   blue * 0.5  * ( sin( (o-1)/(ClusterSeedsNum - 1) *pi + 4/3*pi ) + 1 );
+                    color = red * 0.5 * ( sin( (o-1)/(policyNum - 1) *pi ) + 1 ) + green * 0.5 * ( sin( (o-1)/(policyNum - 1) *pi + 2/3*pi ) + 1)  +   blue * 0.5  * ( sin( (o-1)/(policyNum - 1) *pi + 4/3*pi ) + 1 );
                     if o == 1
                          plot3( hrl.PolicySet( o, 1 ).ContextSet(:, 1), hrl.PolicySet( o, 1 ).ActionSet(:, 1), height, 'Marker', 'o',  'LineStyle', 'none',  'Color',  'r');
                     elseif o == 2
